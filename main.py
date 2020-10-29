@@ -4,7 +4,7 @@ import os
 class Apdlpy:
 
     def __init__(self,path_apdl,path_os):
-        self.comandos = "FINISH\\n/CLEAR\\n/PREP7\\n"
+        self.comandos = "FINISH\\n/CLEAR\\n/e\\n"
         self.apdlpath = path_apdl
         self.ospath = path_os
         self.text_path = "comandline.txt"
@@ -27,8 +27,8 @@ class Apdlpy:
         C = "CM,"+nomegrupo+",KP\\n"
         self.comandos +=C
     ##comandos de linhas
-    def l(self,n,x,y,z):
-        C = "L,"+str(n)+","+str(x)+","+str(y)+","+str(z)+"\\n"
+    def l(self,n,ponto1,ponto2):
+        C = "L,"+str(n)+","+str(x)+"\\n"
         self.comandos +=C
 
     def lunsel(self):
