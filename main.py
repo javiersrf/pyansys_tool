@@ -97,8 +97,6 @@ class Apdlpy:
         self.comandos +=C
         with open(self.text_path,"w") as file:
             file.write(self.comandos)
-
-    ##executar ansys
     def execute(self):
         os.system(self.apdlpath+" –b –p projectname -i "+self.text_path+" –o outputfile.txt")
         
