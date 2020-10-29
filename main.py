@@ -81,6 +81,12 @@ class Apdlpy:
         C = "CMSEL,S,"+grupo+"\\n"
         self.comandos +=C   
 
+    ##comandos de esfor;os
+    def force(self,no,lab,valor1):
+        C = "F, "+str(no)+", "+str(lab)+", "+str(valor1)+", , , \\n"
+        self.comandos +=C 
+
+
 
     ##comandos gerais
     def DK(self,kpoint):
